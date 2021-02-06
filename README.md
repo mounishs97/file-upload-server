@@ -1,0 +1,1 @@
+A simple file upload express server to use inside private network instead of copying via pendrive or other storage medium.
