@@ -34,14 +34,10 @@ app.get('/', function(req, res) {
 });
 
 app.post('/upload', upload.single('uploaded_file'), function (req, res) {
-   // req.file is the name of your file in the form above, here 'uploaded_file'
-   // req.body will hold the text fields, if there were any 
    console.log(req.file, req.body)
    res.status(200).json({"message": "Uploaded successfully"});
 });
-    
-// Take any port number of your choice which 
-// is not taken by any other process 
+   
 app.listen(8080,function(error) { 
     if(error) throw error 
         console.log("Ready to download your home network files......") 
